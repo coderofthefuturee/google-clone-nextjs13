@@ -1,12 +1,24 @@
 // import SearchHeader from "../components/SearchHeader";
 import "./../globals.css";
+import Footer from "./../components/Footer";
 
-export default function SearchLayout({ children }) {
+export default function RootLayout({ children }) {
   return (
-    <div>
+    <html lang="en">
+
       {/* <SearchHeader /> */}
-      {children}
-      {/* Footer */}
-    </div>
+      {/*
+        <head /> will contain the components returned by the nearest parent
+        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
+      */}
+      <body className="relative min-h-screen">
+        {children}
+        {/* Footer */}
+
+        <Footer />
+      </body>
+    </html>
   );
 }
+
+
