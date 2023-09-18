@@ -4,6 +4,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { BsFillMicFill } from "react-icons/bs";
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 export default function HomeSearch() {
     const router = useRouter();
@@ -45,14 +46,16 @@ export default function HomeSearch() {
             <button onClick={handleSubmit}
             className="flex rounded-full p-2 flex-col space-y-2 sm:space-y-0 sm:space-x-4 justify-center sm:flex-row mt-8 border border-white hover:bg-blue-600 transition duration-200">Google Search</button>
             <button 
-                disabled={randomSearchLoading}
+                // disabled={randomSearchLoading}
                 onClick={randomSearch}
                 className="flex rounded-full p-2 flex-col space-y-2 sm:space-y-0 sm:space-x-4 justify-center sm:flex-row mt-8 border border-white hover:bg-yellow-600 transition duration-200"
             >
                 {randomSearchLoading ? (
-                    <img
+                    <Image
                         src="spinner.svg"
                         alt="loading..."
+                        width={100} // provide a width
+                        height={100} // provide a height
                         className="h-6 text-center"
                     />
                 ) : (
