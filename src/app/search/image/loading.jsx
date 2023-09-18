@@ -1,24 +1,24 @@
 export default function loading() {
     return (
-      <>
-          <div className="mx-2 pt-10 max-w-6xl lg:pl-52 animate-pulse">
-              <div className="h-2.5 w-48 bg-gray-200 rounded-full mb-2.5"></div>
-              <div className="h-3.5 max-w-[360px] bg-gray-200 rounded-full mb-2.5"></div>
-              <div className="h-2 max-w-[560px] bg-gray-200 rounded-full mb-2.5"></div>
-              <div className="h-2 max-w-[530px] bg-gray-200 rounded-full mb-2.5"></div>
+      <div className="pt-10 mx-2 md:pl-20 lg:pl-52 max-w-6xl flex sm:space-x-4 flex-col sm:flex-row pb-42">
+        <div className="animate-pulse">
+          <div className="h-60 w-60 mb-4 bg-gray-200 rounded-md"></div>
+          <div className="h-2 w-60 mb-2.5 bg-gray-200 rounded-md"></div>
+          <div className="h-2 w-44 mb-2.5 bg-gray-200 rounded-md"></div>
+        </div>
+        <div className="hidden sm:inline-flex sm:space-x-4">
+          <div className="animate-pulse">
+            <div className="h-60 w-60 mb-4 bg-gray-200 rounded-md"></div>
+            <div className="h-2 w-60 mb-2.5 bg-gray-200 rounded-md"></div>
+            <div className="h-2 w-44 mb-2.5 bg-gray-200 rounded-md"></div>
           </div>
-          <div className="mx-2 pt-10 max-w-6xl lg:pl-52 animate-pulse">
-              <div className="h-2.5 w-48 bg-gray-200 rounded-full mb-2.5"></div>
-              <div className="h-3.5 max-w-[360px] bg-gray-200 rounded-full mb-2.5"></div>
-              <div className="h-2 max-w-[560px] bg-gray-200 rounded-full mb-2.5"></div>
-              <div className="h-2 max-w-[530px] bg-gray-200 rounded-full mb-2.5"></div>
+          <div className="animate-pulse">
+            <div className="h-60 w-60 mb-4 bg-gray-200 rounded-md"></div>
+            <div className="h-2 w-60 mb-2.5 bg-gray-200 rounded-md"></div>
+            <div className="h-2 w-44 mb-2.5 bg-gray-200 rounded-md"></div>
           </div>
-          <div className="mx-2 pt-10 max-w-6xl lg:pl-52 animate-pulse">
-              <div className="h-2.5 w-48 bg-gray-200 rounded-full mb-2.5"></div>
-              <div className="h-3.5 max-w-[360px] bg-gray-200 rounded-full mb-2.5"></div>
-              <div className="h-2 max-w-[560px] bg-gray-200 rounded-full mb-2.5"></div>
-              <div className="h-2 max-w-[530px] bg-gray-200 rounded-full mb-2.5"></div>
-          </div>
-      </>
-    )
+        </div>
+      </div>
+    );
   }
+  
