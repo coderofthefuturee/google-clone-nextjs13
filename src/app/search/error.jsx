@@ -8,8 +8,6 @@ export default function Error({ error, reset }) {
   
   useEffect(() => {
     console.log("Error: ", error);
-    //GO back or comment for try again
-    router.push("/");
   }, [error]);
   return (
     <div className="flex flex-col justify-center items-center pt-10">

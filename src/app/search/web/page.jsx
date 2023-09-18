@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic";
 
-import WebSearchResults from "@/components/WebSearchResults";
+import WebSearchResults from "../../components/WebSearchResults";
 import Link from "next/link";
 
 export default async function WebSearchPage({ searchParams }) {
@@ -11,7 +11,6 @@ export default async function WebSearchPage({ searchParams }) {
   );
 
   if (!response.ok) {
-    console.log(response);
     throw new Error("Something went wrong");
   }
 
