@@ -62,8 +62,9 @@ export default function HomeSearch() {
                     "I am Feeling Lucky"
                 )}
             </button>
-            <p>This app is created for educational purposes.</p>
         </div>
+
+        <p className='p-10 text-gray-300'>This app is created for educational purposes.</p>
     </>
   );
 }
